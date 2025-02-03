@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Add to your existing Tailwind CSS */
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+  h1, h2, h3, .font-playfair {
+    @apply font-playfair;
+  }
+}
+@layer components {
+  .luxury-card {
+    @apply transition-all duration-300 hover:shadow-2xl bg-white rounded-lg overflow-hidden border border-gray-100;
+  }
+  .luxury-button {
+    @apply bg-gradient-to-r from-blue-900 to-blue-800 text-white px-8 py-3 rounded-md hover:from-blue-800 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+  .luxury-input {
+    @apply w-full px-4 py-3 border-2 border-gray-200 rounded-md focus:outline-none focus:border-blue-900 transition-all duration-200;
+  }
+}
+/* Custom animations */
+.fade-up {
+  animation: fadeUp 0.6s ease-out;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
