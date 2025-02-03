@@ -23,7 +23,7 @@ export function App() {
             <Route path="/property/:id" element={<PropertyDetails />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/payment" element={<PaymentPage />} />
-            <Route path="/deals" element={<DealsPage />} />
+            <Route  path="/deals" element={<DealsPage />} />
           </Routes>
         </main>
         <Footer />
